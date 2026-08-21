@@ -1,0 +1,3 @@
+[submodule "FMCWLidar-SIL"]
+	path = FMCWLidar-SIL
+	url = git@github.com:SZTU-ICOC-FMCWlab/FMCWLidar-SIL.git
