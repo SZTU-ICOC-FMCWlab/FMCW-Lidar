@@ -1,3 +1,6 @@
 [submodule "FMCWLidar-SIL"]
 	path = FMCWLidar-SIL
 	url = git@github.com:SZTU-ICOC-FMCWlab/FMCWLidar-SIL.git
+[submodule "FMCWLidar-matlab-sim"]
+	path = FMCWLidar-matlab-sim
+	url = git@github.com:SZTU-ICOC-FMCWlab/FMCWLidar-matlab-sim.git
