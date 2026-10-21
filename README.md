@@ -8,6 +8,19 @@
 克隆时使用 `git clone --recurse-submodules`；已有克隆执行
 `git submodule update --init --recursive`。
 
+完整下载（需有两个子仓库的访问权限）：
+
+```sh
+git clone --recurse-submodules git@github.com:SZTU-ICOC-FMCWlab/FMCW-Lidar.git
+```
+
+GitHub 主仓库的 **Download ZIP 不包含子模块内容**。不用 Git 时，请另行下载
+`FMCWLidar-SIL` 仓库的 ZIP 并解压。该私密子仓库已附四份器件 PDF，仅供内部阅读；
+在 MATLAB 中进入 `FMCWLidar-SIL`，运行 `startup_fmcwlidar_sil`，打开模型后
+双击器件模块，再点击“帮助”即可打开本地手册，不依赖原电脑目录。
+详见 [手册说明](FMCWLidar-SIL/docs/manuals/README.md)。运行模型需 MATLAB/Simulink，
+阅读 PDF 需系统有 PDF 阅读应用。
+
 ## TX 设备与线性化
 
 - [设备说明、保护边界与官方资料](FMCWLidar-SIL/docs/DEVICE_GUIDE.md)
