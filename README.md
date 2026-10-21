@@ -90,6 +90,7 @@ paths = build_fmcw_workspace();   % 重新生成/更新模型；不运行它们
 - ARB 历史波形重建为 2000 字节、10 个 LF 字节，SHA256 匹配记录；本次没有连接仪器或改变实机输出。
 - 整机软件模型运行两 chirp：器件范围检查通过、无 FPGA fault。不是 64 chirp 收敛验证，也不是实机精度验证。
 - 另建全新本地递归克隆，统一打开入口、实际器件 OpenFcn、随仓库 PDF 和硬件禁用示例均通过；该检查不替代 GitHub 远端权限与网络克隆验证。
+- 已实际通过 GitHub SSH 全新递归克隆四个子模块；独立 MATLAB 进程运行统一打开入口、SIGLENT 面板/硬件禁用示例和两 chirp 整机软件场景通过。六份 PDF 及归档用户模型与本地源文件逐字节一致。发布时合并保留远端已有的电流扰动 Simulink 提交，未强制覆盖历史。
 - 旧信号级仿真仍需要 Symbolic Math Toolbox；本机没有 `syms`，该完整入口烟测在标定求解处停止，不能记为通过。
 - 活动文档的本地链接检查通过；Vivado 工程源文件引用可在本地文件或对应 XCIX 容器中定位。未执行 Vivado 综合或硬件验证。
 - [完整离线联调记录及未通过项](FMCWLidar-Experiments/runs/2026-10-22-repository-migration/README.md)
