@@ -1,0 +1,11 @@
+# Workspace-level MATLAB/Simulink generated artifacts
+/slprj/
+/codegen/
+/work/
+/*.slxc
+/*.asv
+/*.autosave
+/*.log
+/matlab_crash_dump*
+.DS_Store
+Thumbs.db
