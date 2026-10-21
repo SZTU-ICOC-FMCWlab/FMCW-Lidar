@@ -2,7 +2,7 @@
 
 ## 子项目
 
-- [`FMCWLidar-SIL`](FMCWLidar-SIL)：发射端设备模型、Simulink 软件在环及 FPGA 行为参考。
+- [`FMCWLidar-SIL`](FMCWLidar-SIL)：可拖放设备库、SIGLENT TCP 实机控制、发射端设备模型、Simulink 软件在环及 FPGA 行为参考。
 - [`FMCWLidar-matlab-sim`](FMCWLidar-matlab-sim)：算法仿真、FPGA 工程及 Python 可视化。
 
 克隆时使用 `git clone --recurse-submodules`；已有克隆执行
@@ -15,11 +15,15 @@ git clone --recurse-submodules git@github.com:SZTU-ICOC-FMCWlab/FMCW-Lidar.git
 ```
 
 GitHub 主仓库的 **Download ZIP 不包含子模块内容**。不用 Git 时，请另行下载
-`FMCWLidar-SIL` 仓库的 ZIP 并解压。该私密子仓库已附四份器件 PDF，仅供内部阅读；
+`FMCWLidar-SIL` 仓库的 ZIP 并解压。该私密子仓库已附六份器件 PDF，仅供内部阅读；
 在 MATLAB 中进入 `FMCWLidar-SIL`，运行 `startup_fmcwlidar_sil`，打开模型后
 双击器件模块，再点击“帮助”即可打开本地手册，不依赖原电脑目录。
 详见 [手册说明](FMCWLidar-SIL/docs/manuals/README.md)。运行模型需 MATLAB/Simulink，
 阅读 PDF 需系统有 PDF 阅读应用。
+
+设备库中已加入 **SIGLENT SDG6000X TCP**，默认不访问硬件；启动工程后运行
+`build_siglent_sdg_tcp_example`，再打开 `SIGLENT_SDG_TCP_Example`。
+支持范围、接线顺序及未完成的实机验证见 [使用说明](FMCWLidar-SIL/README.md#siglent-tcp-实验室设备)。
 
 ## TX 设备与线性化
 
