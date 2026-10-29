@@ -76,6 +76,7 @@ paths = build_fmcw_workspace();   % 重新生成/更新模型；不运行它们
 
 - [逐次实验和历史数据索引](FMCWLidar-Experiments/README.md)
 - [激光器标准输出搭建：不带 MZI 的冒烟测试](FMCWLidar-Experiments/runs/2026-10-29-laser-standard-output/README.md)
+- [50 cm MZI 标准满额联调：原始波形与频谱](FMCWLidar-Experiments/runs/2026-10-29-mzi-50cm-uncompensated/README.md)
 - [SIGLENT ARB 实机验证记录](FMCWLidar-Experiments/runs/2026-10-22-siglent-arb/README.md)
 - [200 kHz / 3 GHz / 0.50 m MZI 辨识与补偿方案](FMCWLidar-Experiments/docs/TX_LINEARIZATION_200KHZ.md)
 - [离线 HTML 实验方案](FMCWLidar-Experiments/docs/TX_Identification_Compensation.html)
